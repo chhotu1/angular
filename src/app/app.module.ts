@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AdminModule } from './admin/admin.module';
+import { HomeModule } from './home/home.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +20,9 @@ import { ChatComponent } from './chat/chat.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
