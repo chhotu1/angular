@@ -1,6 +1,6 @@
 <div>
     <app-header></app-header>
-    <app-home></app-home>
+    <app-home *ngIf="router.url == '/home'"></app-home>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 </div>
