@@ -5,6 +5,7 @@ import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 import { AdminModule } from './admin/admin.module';
 import { HomeModule } from './home/home.module';
+import { UserModule } from './user/user.module'
 // import { LoginComponent } from './auth/login/login.component';
 // import { RegisterComponent} from './auth/register/register.component'
 
@@ -16,6 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ChatComponent } from './chat/chat.component';
 import { AuthModule } from './auth/auth.module';
 import { from } from 'rxjs';
+import { AuthGuard } from './guard/auth.guard';
+import { RoleGuardGuard } from './guard/role-guard.guard';
 
 
 
@@ -36,9 +39,11 @@ import { from } from 'rxjs';
     AppRoutingModule,
     AdminModule,
     HomeModule,
+    UserModule
     // AuthModule
   ],
-  providers: [],
+  providers: [AuthGuard,RoleGuardGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

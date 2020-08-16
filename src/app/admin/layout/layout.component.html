@@ -1,4 +1,7 @@
 <div>
-    <app-home></app-home>
-    <router-outlet></router-outlet>
-  </div>
+  <admin-header></admin-header>
+  <app-admin-dashboard *ngIf="router.url=='/admin'"></app-admin-dashboard>
+  <router-outlet></router-outlet>
+  <admin-footer></admin-footer>
+</div> 
+

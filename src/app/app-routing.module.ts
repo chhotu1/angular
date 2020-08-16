@@ -16,6 +16,7 @@ const routes: Routes = [
   },
   { path: 'admin', loadChildren: './admin/admin.module#AdminModule' },
   { path: 'home', loadChildren: './home/home.module#HomeModule' },
+  { path: 'user', loadChildren: './user/user.module#UserModule' },
   {
     path:'**',component:PageNotFoundComponent
   },
