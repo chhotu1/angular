@@ -25,11 +25,9 @@ import { Observable } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Role } from '../model/role'
 
-const API_ENDPOINT = 'http://localhost:8080';
-
-
+// const API_ENDPOINT = 'http://localhost:8080';
 // live server, dont use / at end of url
-// const API_ENDPOINT = 'https://squared-api.herokuapp.com'
+const API_ENDPOINT = 'https://nodebcmps.herokuapp.com'
 @Injectable({
   providedIn: 'root'
 }) 
